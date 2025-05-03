@@ -1,6 +1,22 @@
-*.ts
-!*.d.ts
+# Build artifacts
+*.js
+!jest.config.js
+*.d.ts
 
-# CDK asset staging directory
-.cdk.staging
-cdk.out
+# Node modules
+node_modules/
+
+# CDK output
+cdk.out/
+.cdk.staging/
+cdk.context.json
+
+# Ignore CDK build folders
+bin/
+lib/*.js
+lib/*.d.ts
+
+# IDE/editor
+.vscode/
+.idea/
+.DS_Store

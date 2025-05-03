@@ -6,6 +6,8 @@
   },
   "scripts": {
     "build": "tsc",
+    "setup": "npm install &&  npm run build",
+    "clean": "rm -rf ./dist",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
