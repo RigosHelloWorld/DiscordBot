@@ -1,6 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { aws_ssm as ssm, aws_iam as iam } from 'aws-cdk-lib';
+
 export interface InfrastructureStackProps extends cdk.StackProps {
   discordApplicationId: string;
   discordBotName: string;
