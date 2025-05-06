@@ -35,7 +35,7 @@ export class InfrastructureStack extends cdk.Stack {
     });
 
     new ssm.StringParameter(this, 'DiscordSSMBotTokenId', {
-      stringValue: this.props.discordBotName,
+      stringValue: this.props.discordBotTokenId,
       parameterName: `/Discord/${this.props.discordBotName}/TokenId`,
       tier: ssm.ParameterTier.STANDARD,
     });
